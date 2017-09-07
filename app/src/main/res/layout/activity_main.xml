@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.savingdata.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared Prefrences" />
+
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usingSharedPref"
+        android:text="Save Data" />
+
+    <Button
+        android:id="@+id/btnRetriveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usingSharedPref"
+        android:text="Retrieve Data"/>
+
+    <TextView
+        android:id="@+id/tvRetriveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Using SqLite" />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"/>
+
+    <Button
+        android:id="@+id/btnSaveDataSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usingSQLite"
+        android:text="Save Contact" />
+    <Button
+        android:id="@+id/btnRetriveDataSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usingSQLite"
+        android:text="Retrieve Contact" />
+
+
+</LinearLayout>
